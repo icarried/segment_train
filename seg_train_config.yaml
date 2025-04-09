@@ -1,0 +1,21 @@
+project: "segment_train_ISBI2012"
+dataset: "./dataset_ISBI2012"
+logging_dir: "/log"
+output_dir: "./output"
+enlarge_train_dataset: "./enlarge_datasets/ISBI2012_sdepp_96x2img"
+enlarge_and_org_choice:
+  - org
+  - enlarge
+  # - flip_augmentation
+  # - rotate_augmentation
+
+batch_size: 16
+num_epochs: 100
+lr: 0.0001
+image_size: 256
+seed: 7777777
+color_mode: "grayscale" # "rgb" or "grayscale"
+resume_from_checkpoint: null # null , "latest", "path/to/checkpoint“
+checkpoint_epochs: 1000
+checkpoints_total_limit: 5
+logging_epochs: 20

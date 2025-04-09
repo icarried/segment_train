@@ -1,0 +1,8 @@
+# Model configuration
+model_path: "./xxx/xxx.pt"
+dataset: "../dataset_ISBI2012"
+batch_size: 16
+image_size: 256
+color_mode: "rgb"
+output_dir: "./test_results"
+save_predictions: false
